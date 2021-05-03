@@ -11,6 +11,8 @@ namespace TestMaximum
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to test maximum problem");
+            Console.WriteLine(MaximumValue.MaxIntValue(200,300,500));
+            Console.ReadLine();
         }
     }
 }
