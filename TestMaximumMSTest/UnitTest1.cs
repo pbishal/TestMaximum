@@ -46,6 +46,43 @@ namespace TestMaximumMSTest
                 int result = MaximumValue.MaxIntValue(firstValue, secondValue, thirdValue);
                 Assert.AreEqual(expectedResult, result);
             }
+            /// <summary>
+            /// TC2.1 When Three integers are given to the method and largest number among all numbers is at position 1st, this test case should pass
+            /// </summary>
+            /// <param name="firstValue">firstValue will be maximum of all three integer values</param>
+            [TestMethod]
+            [DataRow(9.9f, 8.8f, 7.7f)]
+            public void GivenThreeFloatsWhenMaxfloatAtPositionOneShouldPass(float firstValue, float secondValue, float thirdValue)
+            {
+
+                float expectedResult = firstValue;
+                float result = MaximumValue.MaxFloatValue(firstValue, secondValue, thirdValue);
+                Assert.AreEqual(expectedResult, result);
+            }
+
+            /// <summary>
+            /// TC2.2 When Three integers are given to the method and largest number among all numbers is at position 2nd, this test case should pass
+            /// </summary>
+            [TestMethod]
+            [DataRow(8.8f, 9.9f, 6.6f)]
+            public void GivenThreefloatsWhenMaxfloatAtPositionTwoShouldPass(float firstValue, float secondValue, float thirdValue)
+            {
+                float expectedResult = secondValue;
+                float result = MaximumValue.MaxFloatValue(firstValue, secondValue, thirdValue);
+                Assert.AreEqual(expectedResult, result);
+            }
+
+            /// <summary>
+            /// TC2.3 When Three integers are given to the method and largest number among all numbers is at position 3rd, this test case should pass
+            /// </summary>
+            [TestMethod]
+            [DataRow(3.3f, 4.4f, 5.5f)]
+            public void GivenThreefloatsWhenMaxfloatAtPositionThreeShouldPass(float firstValue, float secondValue, float thirdValue)
+            {
+                float expectedResult = thirdValue;
+                float result = MaximumValue.MaxFloatValue(firstValue, secondValue, thirdValue);
+                Assert.AreEqual(expectedResult, result);
+            }
         }
     }
 }
