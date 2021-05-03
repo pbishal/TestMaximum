@@ -62,5 +62,25 @@ namespace TestMaximum
                 return 0;
             }
         }
+        public static string MaxStringValue(string firstnum, string secondnum, string thirdnum)
+        {
+            if (firstnum.CompareTo(secondnum) > 0 && firstnum.CompareTo(thirdnum) > 0)
+            {
+                return firstnum;
+            }
+            else if (secondnum.CompareTo(firstnum) > 0 && secondnum.CompareTo(thirdnum) > 0)
+            {
+                return secondnum;
+            }
+            else if (thirdnum.CompareTo(firstnum) > 0 && thirdnum.CompareTo(secondnum) > 0)
+            {
+                return thirdnum;
+            }
+            else
+            {
+                Console.WriteLine("all 3 numbers are same");
+                return null;
+            }
+        }
     }
 }

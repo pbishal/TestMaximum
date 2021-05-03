@@ -83,6 +83,43 @@ namespace TestMaximumMSTest
                 float result = MaximumValue.MaxFloatValue(firstValue, secondValue, thirdValue);
                 Assert.AreEqual(expectedResult, result);
             }
+            /// <summary>
+            /// TC2.1 When Three integers are given to the method and largest number among all numbers is at position 1st, this test case should pass
+            /// </summary>
+            /// <param name="firstValue">firstValue will be maximum of all three integer values</param>
+            [TestMethod]
+            [DataRow("Peach", "Apple", "Banana")]
+            public void GivenThreeStringsWhenMaxStringAtPositionOneShouldPass(string firstValue, string secondValue, string thirdValue)
+            {
+
+                string expectedResult = firstValue;
+                string result = MaximumValue.MaxStringValue(firstValue, secondValue, thirdValue);
+                Assert.AreEqual(expectedResult, result);
+            }
+
+            /// <summary>
+            /// TC2.2 When Three integers are given to the method and largest number among all numbers is at position 2nd, this test case should pass
+            /// </summary>
+            [TestMethod]
+            [DataRow("Apple", "Peach", "Banana")]
+            public void GivenThreestringsWhenMaxstringAtPositionTwoShouldPass(string firstValue, string secondValue, string thirdValue)
+            {
+                string expectedResult = secondValue;
+                string result = MaximumValue.MaxStringValue(firstValue, secondValue, thirdValue);
+                Assert.AreEqual(expectedResult, result);
+            }
+
+            /// <summary>
+            /// TC2.3 When Three integers are given to the method and largest number among all numbers is at position 3rd, this test case should pass
+            /// </summary>
+            [TestMethod]
+            [DataRow("Apple", "Banana", "Peach")]
+            public void GivenThreeStringsWhenMaxStringAtPositionThreeShouldPass(string firstValue, string secondValue, string thirdValue)
+            {
+                string expectedResult = thirdValue;
+                string result = MaximumValue.MaxStringValue(firstValue, secondValue, thirdValue);
+                Assert.AreEqual(expectedResult, result);
+            }
         }
     }
 }
