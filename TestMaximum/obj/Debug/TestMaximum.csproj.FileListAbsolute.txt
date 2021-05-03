@@ -1,0 +1,7 @@
+C:\Users\Bishal Pradhan\Desktop\bridgelabz\dotNET\TestMaximum\TestMaximum\bin\Debug\TestMaximum.exe.config
+C:\Users\Bishal Pradhan\Desktop\bridgelabz\dotNET\TestMaximum\TestMaximum\bin\Debug\TestMaximum.exe
+C:\Users\Bishal Pradhan\Desktop\bridgelabz\dotNET\TestMaximum\TestMaximum\bin\Debug\TestMaximum.pdb
+C:\Users\Bishal Pradhan\Desktop\bridgelabz\dotNET\TestMaximum\TestMaximum\obj\Debug\TestMaximum.csprojAssemblyReference.cache
+C:\Users\Bishal Pradhan\Desktop\bridgelabz\dotNET\TestMaximum\TestMaximum\obj\Debug\TestMaximum.csproj.CoreCompileInputs.cache
+C:\Users\Bishal Pradhan\Desktop\bridgelabz\dotNET\TestMaximum\TestMaximum\obj\Debug\TestMaximum.exe
+C:\Users\Bishal Pradhan\Desktop\bridgelabz\dotNET\TestMaximum\TestMaximum\obj\Debug\TestMaximum.pdb
