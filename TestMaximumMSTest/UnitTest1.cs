@@ -6,27 +6,35 @@ namespace TestMaximumMSTest
     [TestClass]
     public class UnitTest1
     {
+        /// <summary>
+        /// Pass  Integer Number and Return Maximum Number
+        /// </summary>
+
         [TestMethod]
         public void MaximumNumberGenericInteger_PassThreeNumbers_ReturnMaximumNumber()
         {
-            int[] intArray = {232, 323, 423, 523, 567 };
+            int[] intArray = { 112, 344, 432, 555, 678 };
             Generic<int> generic = new Generic<int>(intArray); //crating object with int data type
-            int result = generic.MaxMethod();
-            int max = 567;
+            int result = generic.MaxMethod();//actual
+            int max = 678;//expected
             Assert.AreEqual(result, max);
         }
 
-
+        /// <summary>
+        /// Pass  Float Number and Return Maximum Number
+        /// </summary>
         [TestMethod]
         public void MaximumNumberGenericFloat_PassThreeNumbers_ReturnMaximumNumber()
         {
-            double[] doubleArray = { 10.5, 24.6, 7.6, 87.6, 7.7 };
+            double[] doubleArray = { 11.2, 34.4, 4.32, 55.5, 6.78 };
             Generic<double> genericDouble = new Generic<double>(doubleArray);
             double result = genericDouble.MaxMethod();
-            double max = 87.6;
+            double max = 55.5;
             Assert.AreEqual(result, max);
         }
-
+        /// <summary>
+        /// Pass three strin  Number and Return Maximum string
+        /// </summary>
         [TestMethod]
         public void MaximumNumberGenericString_PassThreeNumbers_ReturnMaximumNumber()
         {

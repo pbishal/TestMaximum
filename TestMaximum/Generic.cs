@@ -30,10 +30,7 @@ namespace TestMaximum
             Array.Sort(Number);
             return Number;
         }
-        void add(params int[] a) //specify a method parameter
-        {
 
-        }
 
         /// <summary>
         /// this method is created for finding max for given type
@@ -64,6 +61,7 @@ namespace TestMaximum
         {
             var max = MaximumValue(this.Number);
             Console.Write(max);
+
         }
     }
 }
